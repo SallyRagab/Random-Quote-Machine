@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+$colors: #FF69DB #D45FE8 #8A5FE8 #6E69FF;
+
+@for $x in $color {
+  .col#{$x} { background : $x};
+}
+body {
+  background: nth($colors, 1);
+}
